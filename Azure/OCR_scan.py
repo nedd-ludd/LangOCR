@@ -40,6 +40,8 @@ def hello_world(client):
         time.sleep(1)
 
     # Print the detected text, line by line
+    
+
     if read_result.status == OperationStatusCodes.succeeded:
         for text_result in read_result.analyze_result.read_results:
             for line in text_result.lines:
